@@ -43,11 +43,11 @@
                         * 6,947 wines classified <!-- .element: class="fragment" data-fragment-index="2" height="150px" -->
                             * 1599 red  <!-- .element: class="fragment" data-fragment-index="2" height="150px" -->
                             * 4898 white  <!-- .element: class="fragment" data-fragment-index="2" height="150px" -->
-                        * <!-- .element: class="fragment" data-fragment-index="3" height="150px" --> <span>[Original authors](https://www.sciencedirect.com/science/article/pii/S0167923609001377?via%3Dihub) classified colors independently</span<!-- .element: class="fragment" data-fragment-index="3" height="150px" -->
+                        * <!-- .element: class="fragment" data-fragment-index="3" height="150px" --> <span><a href="https://www.sciencedirect.com/science/article/pii/S0167923609001377?via%3Dihub">Original authors</a> classified colors independently</span<!-- .element: class="fragment" data-fragment-index="3" height="150px" -->
                             * SVM
-                            * 89.0% accuracy for red
-                            * 86.8% accuracy for white
-                        * Color-agnostic wine classification model <!-- .element: class="fragment" data-fragment-index="4" height="150px" -->
+                            * 89.0% accuracy for red<!-- .element: class="fragment" data-fragment-index="4" height="150px" -->
+                            * 86.8% accuracy for white<!-- .element: class="fragment" data-fragment-index="4" height="150px" -->
+                        * Color-agnostic wine classification model <!-- .element: class="fragment" data-fragment-index="5" height="150px" -->
                     </script>
                 </section>
                 
@@ -59,7 +59,7 @@
                         * Ranked quality on {0, 10}<!-- .element: class="fragment" data-fragment-index="1" -->
                         * 11 features <!-- .element: class="fragment" data-fragment-index="2" -->
                         
-                        ![Data Table](images/data head.png) <!-- .element: class="fragment" data-fragment-index="3" -->
+                        <img src="images/data head.png"><!-- .element: class="fragment" data-fragment-index="3" -->
 
                     </script>
                 </section>
@@ -79,8 +79,8 @@
                         --- 
                         * Split data: 90/10 for model exploration and parity plot
                         * Resample to fix class imbalances<!-- .element: class="fragment" data-fragment-index="1" -->
-                            * Synthetic minority over-sampling technique (SMOTE)<!-- .element: class="fragment" data-fragment-index="1" -->
-                            * Generate synthetic data points by interpolating existing points<!-- .element: class="fragment" data-fragment-index="1" -->
+                            * Synthetic minority over-sampling technique (SMOTE)<!-- .element: class="fragment" data-fragment-index="2" -->
+                            * Generate synthetic data points by interpolating existing points<!-- .element: class="fragment" data-fragment-index="3" -->
 
                     </script>
                 </section>
@@ -108,7 +108,7 @@
                         criterion = ["gini", "entropy"]
                         ```
                         * Include documentation suggested most important parameters and default values in search<!-- .element: class="fragment" data-fragment-index="0" -->
-                        * <!-- .element: class="fragment" data-fragment-index="1" -->`RandomizedSearchCV`<!-- .element: class="fragment" data-fragment-index="1" -->
+                        * <!-- .element: class="fragment" data-fragment-index="1" -->RandomizedSearchCV<!-- .element: class="fragment" data-fragment-index="1" -->
                         * 100 randomly selected combinations<!-- .element: class="fragment" data-fragment-index="2" -->
                         * 5 fold cross-validation<!-- .element: class="fragment" data-fragment-index="3" -->
 
